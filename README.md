@@ -11,7 +11,6 @@ Live Preview: https://rajat-car.netlify.app/
 **User Interface:**
 
 Display available cars with images and details.
-Filter and search cars by type, brand, or availability.
 View detailed car information, including price and specifications.
 
 **Booking & Reservations:**
@@ -19,16 +18,12 @@ View detailed car information, including price and specifications.
 Simulate the booking process with a step-by-step flow.
 Select rental dates and see car availability.
 
-**Responsive Design:**
-
-Mobile-friendly layout.
-Clean and modern interface.
 
 **Additional Features:**
 
 Interactive car cards.
 Dynamic rendering of content.
-Smooth navigation using React Router (if implemented).
+Smooth navigation using React Router.
 
 # Technologies Used  
 
@@ -36,14 +31,13 @@ Smooth navigation using React Router (if implemented).
 
 **Frontend:**  
 - **React.js:** Component-based architecture for building a dynamic UI.  
-- **React Router:** For smooth navigation (if implemented).  
+- **React Router:** For smooth navigation.  
 - **CSS/Tailwind CSS:** For styling and responsive design.  
 
 **State Management:**  
 - **React Hooks (useState, useEffect):** For managing component state.  
 
-**Additional Tools:**  
-- **Axios or Fetch API:** For data fetching (if applicable).  
+**Additional Tools:**    
 - **Vite/Create React App:** For project setup and development.
 
 # Getting Started with Installation
