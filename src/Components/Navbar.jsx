@@ -1,17 +1,52 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <Link to="/" className="navbar-logo">Dream Drive</Link>
-      <div className="navbar-links">
-      <Link to="/" className="navbar-link">Home</Link>
-      <Link to="/car-listing" className="navbar-link">Car Listing</Link>
-      <Link to="/user-info" className="navbar-link">User Info</Link>
-      <Link to="/rental-details" className="navbar-link">Rental Details</Link>
-      <Link to="/contact-us" className="navbar-link">Contact Us</Link>
+    <nav className='navbar'>
+      <NavLink to='/' className='navbar-logo'>Dream Drive</NavLink>
+      <div className='navbar-links'>
+        <NavLink
+          to='/'
+          className={({ isActive }) =>
+            isActive ? 'navbar-link active' : 'navbar-link'
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to='/car-listing'
+          className={({ isActive }) =>
+            isActive ? 'navbar-link active' : 'navbar-link'
+          }
+        >
+          Car Listing
+        </NavLink>
+        <NavLink
+          to='/user-info'
+          className={({ isActive }) =>
+            isActive ? 'navbar-link active' : 'navbar-link'
+          }
+        >
+          User Info
+        </NavLink>
+        <NavLink
+          to='/rental-details'
+          className={({ isActive }) =>
+            isActive ? 'navbar-link active' : 'navbar-link'
+          }
+        >
+          Rental Details
+        </NavLink>
+        <NavLink
+          to='/contact-us'
+          className={({ isActive }) =>
+            isActive ? 'navbar-link active' : 'navbar-link'
+          }
+        >
+          Contact Us
+        </NavLink>
       </div>
     </nav>
   );
