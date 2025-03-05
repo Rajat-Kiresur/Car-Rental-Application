@@ -7,6 +7,7 @@ import NavBar from './Components/Navbar';
 import Footer from './Components/Footer';
 import UserInfo from './Components/Pages/UserInfo';
 import RentalDetails from './Components/Pages/RentalDetails';
+import AuthModals from './Components/AuthModals';
 
 function App() {
   return (
@@ -14,12 +15,13 @@ function App() {
       <NavBar />
       <div style={{ paddingTop: '80px', paddingBottom: '50px' }}>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/car-listing" element={<CarListing />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/user-info" element={<UserInfo />} />
-          <Route path="/rental-details" element={<RentalDetails />} />
+          <Route path='/' element={<Homepage />} />
+          <Route path='/car-listing' element={<CarListing />} />
+          <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='/user-info' element={<UserInfo />} />
+          <Route path='/rental-details' element={<RentalDetails />} />
         </Routes>
+        <AuthModals />
       </div>
       <Footer />
     </BrowserRouter>
